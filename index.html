@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-...YOUR_HASH_HERE...==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Sail&display=swap" rel="stylesheet">
+    
+    <!-- Add any additional meta tags or scripts here -->
+</head>
+<body>
+    <header>    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoptable_pets.html">Adoptable Pets</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+
+    <main>
+        <div class ="content">
+            <section id="hero-section">
+                <h1>Welcome to the Pet Adoption Center</h1>
+                <p>Find your perfect companion with us!</p>
+            </section>
+        </div>
+
+        <section id="about-section">
+            <h2>About Us</h2>
+            <div class="paragraph-box">
+                <p>Welcome to the Pet Adoption Center, where we connect loving animals with caring individuals and families. Our mission is to provide a safe haven for animals in need and to facilitate lifelong adoptions.
+                At our center, you'll find a variety of animals eagerly awaiting their forever homes. Whether you're looking for a playful pup, a cuddly kitten, or a loyal companion, we're here to help you find the perfect match.</p>
+                <p>Our dedicated team of staff and volunteers works tirelessly to ensure that each animal receives the love, care, and attention they deserve. We believe that every animal deserves a second chance at happiness, and we're committed to making that a reality.
+                Thank you for considering adoption and for choosing to make a difference in the life of a deserving animal. Together, we can create a brighter future for pets in need.</p>
+            </div>
+        </section>
+        
+        <section id="banner-section">
+            <img src="images/banner2.jpg" alt="Banner Image">
+        </section>
+        
+        <section id="success-stories-section">
+            <h2>Successful Stories</h2>
+            <p>Discover heartwarming tales of pets finding their forever homes...</p>
+        
+            <ul class="success-stories-list">
+                <li class="success-story">
+                    <img src="images/straycat2.jpg" alt="Success Story 1">
+                        <h3>Nora's Journey</h3> 
+                        <p>Nora, a once-shy kitten, found her confidence and a loving family. Read her story...</p>
+                            <button data-modal-target="#modal-nora">More about Nora..</button>
+                                <div class="modal" id="modal-nora">
+                                <div class="modal-header">
+                                    <div class="title">Nora's journey: From stray to cherished companion</div>
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                            <div class="modal-body">
+                                Meet Nora, a once-shy kitten who found her confidence and a loving family. Roaming the busy streets, with an injuried eye, Nora's journey took a heartwarming turn when she found refuge at our shelter, a beacon of hope for animals in need. Now, nestled in the warmth of her forever home, her days are filled with love, cuddles, and endless joy. Her story is a testament to the transformative power of compassion. Join us in celebrating Nora's journey from street stray to cherished companion.
+                        </div>
+                      </div>
+                      <div id="overlay"></div>
+                </li>
+        
+                <li class="success-story">
+                    <img src="images/straydog2.jpg" alt="Success Story 2">
+                    <h3>Rusty's Resilience</h3>
+                    <p>Rusty, a senior dog, proved that age is just a number when he found his perfect match. Read his story...</p>
+                    <button data-modal-target="#modal-rusty">More about Rusty..</button>
+                    <div class="modal" id="modal-rusty">
+                    <div class="modal-header">
+                        <div class="title">Rusty's tale: Finding love in the Twilight years</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                <div class="modal-body">
+                    Rusty, a senior dog with a weathered soul, once knew only loneliness. His days were spent in the quiet corners of our shelter, his aging frame unnoticed by passersby. But within the shelter's walls, Rusty found a glimmer of hope. Then, in a twist of fate, he met his perfect match—a kind soul who saw beyond his gray muzzle and into his gentle heart. Now, embraced by love and companionship, Rusty's twilight years are filled with warmth and joy, proving that age is no barrier to finding happiness. Join us in celebrating Rusty's journey from solitude to belonging.
+            </div>
+          </div>
+          <div id="overlay"></div>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Center. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- Add your JavaScript files or scripts here -->
+    <script src="script.js"></script>
+</body>
+</html>

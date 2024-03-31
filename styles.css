@@ -1,0 +1,300 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to cover the entire viewport */
+}
+
+/* Style the header */
+header {
+    position: fixed;
+    width: 100%;
+    color: #333; /* Dark text color for contrast */
+    padding: 20px 0; /* Increased padding for better spacing */
+    text-align: center; /* Center-align header content */
+    background-image:linear-gradient(to bottom right, #f77457,rgb(234, 191, 194))
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+    margin-top: 10px; /* Add space between header and navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333; /* Dark text color for contrast */
+    text-decoration: none;
+    font-weight: bold; /* Emphasize navigation links */
+}
+
+/* Style the main content */
+
+section {
+    margin-bottom: 30px; /* Increased margin for better separation */
+}
+
+.noto-serif display-TitleBK {
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  
+  .bellefair-regular {
+    font-family: "Bellefair", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+ .content {
+    height: 70vh;
+    width: 100%;
+    background-image: url(images/dogtrio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+ }
+
+@keyframes animate{
+    0%{
+        background-image: url(images/dogtrio.jpg);
+    }
+    20%{
+        background-image: url(images/cattrio.jpg);
+    }
+    40%{
+        background-image: url(images/straydog3.jpg);
+    }
+    60%{
+        background-image: url(images/straycat2.jpg);
+    }
+    80%{
+        background-image: url(images/straydog4.jpg)
+    }
+    100%{
+        background-image: url(images/dogtrio.jpg);
+    }
+}
+
+/* Style the hero section */
+#hero-section {
+     
+    background-size: cover;
+    background-position: center;
+    color: #fa613f;
+    text-align: center;
+    padding: 320px 0;
+    font-family: "Noto Serif Display";
+}
+
+#hero-section h1 {
+    font-size: 50px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+
+#hero-section p {
+    font-size: 27px; /* Increased font size for better readability */
+}
+
+#about-section {
+    text-align: center;
+    background-size: cover; /* Cover the entire section with the background image */
+    background-position: center; /* Center the background image */
+    padding: 40px; /* Add padding for better spacing */
+    font-family: "Bellefair", cursive; /* Use a cursive font for a more playful feel */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+}
+
+#about-section h2 {
+    font-size: 40px; /* Slightly reduce font size */
+    padding-right: 20px; /* Add space between title and paragraph box */
+    font-family: "Noto Serif Display";
+}
+
+#about-section .paragraph-box {
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding to create space within the box */
+    flex: 1; /* Allow paragraph box to grow and fill available space */
+}
+
+#about-section p {
+    font-size: 20px; /* Increase font size */
+    line-height: 1.6; /* Improve readability with increased line height */
+    margin: 0; /* Remove default margins */
+}
+
+.paragraph-box {
+    column-count: 2; /* Set the number of columns */
+    column-gap: 60px; /* Set the gap between columns */
+}
+
+.paragraph-box p {
+    border-width: 10px; /* Set the width of the border */
+    border-style: solid; /* Set the border style */
+    padding: 10px; /* Add padding inside the border */
+    border-image-source: url('https://img.freepik.com/free-photo/abstract-blur-pastel-beautiful-peach-pink-color-sky-warm-tone-background-design-as-banner-slide-show-others_1258-71533.jpg?size=626&ext=jpg');
+    border-image-slice: 200; /* Set the size of the slices in the border image */
+    border-image-repeat: stretch; /* Stretch the border image to fill the border */
+}
+
+#banner-section{
+    margin-left: 50px;
+}
+
+#success-stories-section {
+    text-align: center; /* Center-align text */
+}
+
+#success-stories-section h2 {
+    font-size: 50px; /* Set font size */
+    padding-bottom: 20px; /* Add padding */
+    padding-top: 8px; /* Add padding */
+    font-family: "Noto Serif Display";
+    
+}
+
+#success-stories-section p {
+    font-size: 20px; /* Set font size */
+    padding-bottom: 10px; /* Add padding */
+    font-family: "Bellefair", cursive; /* Use a cursive font for a more playful feel */
+}
+
+
+.success-story {
+    display: inline-block;
+    width: 35%; /* Adjust the width as needed */
+    vertical-align: top;
+    margin-right: 30px; /* Add some spacing between stories */
+    
+}
+
+.success-story img {
+    max-width: 100%;
+}
+
+.success-story h3 {
+    margin-top: 10px;
+}
+
+.success-story p {
+    margin-top: 5px;
+}
+
+.success-story a {
+    display: block;
+    margin-top: 10px;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+} 
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Style the footer */
+footer {
+    background-color: #ff9b85;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    margin-top: 10px; /* Add space between footer content and navigation links */
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px; /* Reduced margin for better spacing between footer links */
+}
+
+footer ul li a {
+    color: #050505; /* Dark text color for contrast */
+    text-decoration: none;
+    font-weight: bold; /* Emphasize footer links */
+}
+
+
+
+
+
