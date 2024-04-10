@@ -36,6 +36,9 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold; /* Emphasize navigation links */
 }
+nav a:hover {
+  color: #ff5100;
+}
 
 input,
 button {

@@ -11,14 +11,21 @@ body {
     min-height: 100vh; /* Set minimum height to cover the entire viewport */
 }
 
+.content-wrapper {
+    flex: 1; /* This makes the content wrapper grow to fill the available space */
+}
 /* Style the header */
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     color: #333; /* Dark text color for contrast */
     padding: 20px 0; /* Increased padding for better spacing */
     text-align: center; /* Center-align header content */
-    background-image:linear-gradient(to bottom right, #f77457,rgb(234, 191, 194))
+    background-image:linear-gradient(to bottom right, #f77457,rgb(234, 191, 194));
+    z-index: 1000; /* Ensure it stays on top */
+    padding: 1rem;
 }
 
 /* Style the navigation */
@@ -38,6 +45,9 @@ nav ul li a {
     font-weight: bold; /* Emphasize navigation links */
 }
 
+nav a:hover {
+    color: #ff5100;
+}
 /* Style the main content */
 
 section {
@@ -277,6 +287,7 @@ footer {
     color: #333;
     text-align: center;
     padding: 20px 0;
+    
 }
 
 footer ul {
