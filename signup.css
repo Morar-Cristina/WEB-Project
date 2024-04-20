@@ -1,0 +1,128 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1525253013412-55c1a69a5738?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBldHN8ZW58MHx8MHx8fDA%3D    ");
+  background-size: auto;
+}
+
+header {
+  background-image:linear-gradient(to bottom right, #f77457,rgb(234, 191, 194));
+    color: #333; /* Dark text color for contrast */
+    padding: 20px 0; /* Increased padding for better spacing */
+    text-align: center; /* Center-align header content */
+    font-family: "Noto Serif Display", serif; /* Use the same font family as the first file */
+}
+
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+    margin-top: 10px; /* Add space between header and navigation */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333; /* Dark text color for contrast */
+    text-decoration: none;
+    font-weight: bold; /* Emphasize navigation links */
+}
+nav a:hover {
+  color: #ff5100;
+}
+
+/* Style the signup form */
+form {
+    background-color: #fff; /* White background */
+    max-width: 400px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding around the form elements */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+h1 {
+    text-align: center; /* Center-align the heading */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 20px; /* Add space below the heading */
+    margin-top: 40px; /* Add space above the heading */
+}
+
+label {
+    display: block; /* Display labels as blocks */
+    margin-bottom: 8px; /* Add space below each label */
+    font-weight: bold; /* Make labels bold for emphasis */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Add padding */
+    margin-bottom: 15px; /* Add space below input fields */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Add padding */
+    background-color: #ff774a; /* Orange background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #ff5620; /* Darker orange on hover */
+}
+
+
+
+.link-footer {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  
+  
+    footer {
+      background-color: #ff9b85;
+      color: #333;
+      text-align: center;
+      padding: 10px 0;
+      font-family: "Noto Serif Display", serif; /* Use the same font family as the main CSS */
+      position: fixed; /* Fix the footer position */
+      bottom: 0; /* Position the footer at the bottom of the viewport */
+      width: 100%; /* Occupy the full width of the viewport */
+    }
+    
+  
+  footer ul {
+    margin-top: 10px; /* Add space between footer content and navigation links */
+  }
+  
+  footer ul li {
+    display: inline;
+    margin-right: 10px; /* Reduced margin for better spacing between footer links */
+  }
+  
+  footer ul li a {
+    color: #050505; /* Dark text color for contrast */
+    text-decoration: none;
+    font-weight: bold; /* Emphasize footer links */
+  }

@@ -48,7 +48,13 @@ nav ul li a {
 nav a:hover {
     color: #ff5100;
 }
-/* Style the main content */
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the two divs */
+    align-items: center; /* Align vertically */
+}
 
 section {
     margin-bottom: 30px; /* Increased margin for better separation */
@@ -68,11 +74,10 @@ section {
     font-weight: 400;
     font-style: normal;
   }
- 
- .content {
+  .content {
     height: 70vh;
     width: 100%;
-    background-image: url(images/dogtrio.jpg);
+    background-image: url("images/dogtrio.jpg"); /* Updated path to the image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,28 +89,24 @@ section {
     animation-duration: 30s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
- }
+}
 
-@keyframes animate{
-    0%{
-        background-image: url(images/dogtrio.jpg);
+@keyframes animate {
+    0%, 20%, 40% {
+        background-image: url("images/dogtrio.jpg"); /* Updated path to the image */
     }
-    20%{
-        background-image: url(images/cattrio.jpg);
+    60% {
+        background-image: url("images/straycat2.jpg"); /* Updated path to the image */
     }
-    40%{
-        background-image: url(images/straydog3.jpg);
+    80% {
+        background-image: url("images/straydog5.jpg"); /* Updated path to the image */
     }
-    60%{
-        background-image: url(images/straycat2.jpg);
-    }
-    80%{
-        background-image: url(images/straydog4.jpg)
-    }
-    100%{
-        background-image: url(images/dogtrio.jpg);
+    100% {
+        background-image: url("images/dogtrio.jpg"); /* Updated path to the image */
     }
 }
+
+
 
 /* Style the hero section */
 #hero-section {
@@ -114,7 +115,7 @@ section {
     background-position: center;
     color: #fa613f;
     text-align: center;
-    padding: 320px 0;
+    padding: 300px 0;
     font-family: "Noto Serif Display";
 }
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pet Adoption Center</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+
+</head>
+<body>
+
+    
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adoptable_pets.html">Adoptable Pets</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="login.php">Log in</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <h1>Signup</h1>
+    
+    <form action="process-signup.php" method="POST" id="signup" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        
+        <div>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+        </div>
+        
+        <div>
+            <label for="password_confirmation">Repeat password</label>
+            <input type="password" id="password_confirmation" name="password_confirmation">
+        </div>
+        
+        <button>Sign up</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Pet Adoption Center. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
