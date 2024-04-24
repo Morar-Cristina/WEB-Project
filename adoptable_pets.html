@@ -4,57 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Adoption Center</title>
-    <!-- Add your CSS files or styles here -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Add any additional meta tags or scripts here -->
 </head>
 <body>
-   
     <header>    
         <nav>
-            <div class="left-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="adoptable_pets.html">Adoptable Pets</a></li>
-                    <li><a href="contact_us.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="right-links">
-                <ul>
-                    <li><a href="signup.html">Sign Up</a></li>
-                    <li><a href="login.php">Log in</a></li>
-                    
-                </ul>
-            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoptable_pets.html">Adoptable Pets</a></li>
+                <li><a href="contact_us.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.php">Log in</a></li>
+            </ul>
         </nav>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search pets by name...">
+            <button id="search-button">Search</button>
+        </div>
     </header>
     
-
+    
     <main>
-        <!-- Your main content goes here -->
         <section id="adoptable-pets">
             <h1>Adoptable Pets</h1>
-            <div class="pet-listing">
-                <img src="https://www.vidavetcare.com/wp-content/uploads/sites/234/2022/04/labrador-retriever-dog-breed-info.jpeg" alt="Pet 1">
-                <h2>Rex</h2>
-                <p>Breed: Labrador Retriever</p>
-                <p>Age: 2 years</p>
-                <p>Gender: Male</p>
-                <p>Description: Rex is a friendly and playful dog. He loves long walks and playing fetch.</p>
-                <p>Adoption Fee: $150</p>
-                <button>Adopt Me</button>
-            </div>
-            <div class="pet-listing">
-                <img src="https://www.guildinsurance.com.au/images/librariesprovider3/breed-images/500x500/domestic-shorthair-(1)-(1).jpg?sfvrsn=a8c650b_2" alt="Pet 2">
-                <h2>Luna</h2>
-                <p>Breed: Domestic Shorthair</p>
-                <p>Age: 1 year</p>
-                <p>Gender: Female</p>
-                <p>Description: Luna is a sweet and affectionate cat. She enjoys cuddling and chasing toys.</p>
-                <p>Adoption Fee: $100</p>
-                <button>Adopt Me</button>
-            </div>
-            <!-- Add more pet listings as needed -->
+            <table id="pets-table">
+                <tr class="pet" id="pet1">
+                    <td>
+                        <img src="https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pet 1">
+                    </td>
+                    <td>
+                        <h2 style="font-size: 24px; font-weight: bold; color: #333;">Melinda</h2>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><strong>Breed:</strong> Border Collie</li>
+                            <li><strong>Age:</strong> 5 years</li>
+                            <li><strong>Gender:</strong> Female</li>
+                            <li><strong>Description:</strong> Melinda is a friendly and playful dog. She loves long walks and playing fetch.</li>
+                        </ul>
+                        <button style="background-color: #ff5100; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Adopt Me</button>
+                    </td>
+                </tr>
+
+                <tr class="pet" id="pet2">
+                    <td>
+                        <img src="https://images.pexels.com/photos/733416/pexels-photo-733416.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pet 2">
+                    </td>
+                    <td>
+                        <h2 style="font-size: 24px; font-weight: bold; color: #333;">Rex</h2>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><strong>Breed:</strong> Pitbull</li>
+                            <li><strong>Age:</strong> 2 years</li>
+                            <li><strong>Gender:</strong> Male</li>
+                            <li><strong>Description:</strong> Rex is a loyal and playful dog. He loves going for walks and fetching tennis balls in the park.</li>
+                        </ul>
+                        <button style="background-color: #ff5100; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Adopt Me</button>
+                    </td>
+                </tr>
+                
+                <tr class="pet" id="pet3">
+                    <td>
+                        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pet 3">
+                    </td>
+                    <td>
+                        <h2 style="font-size: 24px; font-weight: bold; color: #333;">Bella</h2>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><strong>Breed:</strong> Unknown</li>
+                            <li><strong>Age: </strong> 1 year</li>
+                            <li><strong>Gender:</strong> Female</li>
+                            <li><strong>Description:</strong> Bella is a graceful and independent cat. She enjoys lounging in sunny spots and chasing after feather toys.</li>
+                        </ul>
+                        <button style="background-color: #ff5100; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Adopt Me</button>
+                    </td>
+                </tr>
+                
+                <tr class="pet" id="pet4">
+                    <td>
+                        <img src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pet 4">
+                    </td>
+                    <td>
+                        <h2 style="font-size: 24px; font-weight: bold; color: #333;">Luna</h2>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li><strong>Breed:</strong> British Shorthair</li>
+                            <li><strong>Age: </strong> 2 weeks</li>
+                            <li><strong>Gender:</strong> Female</li>
+                            <li><strong>Description: </strong> Luna is a sweet and affectionate cat. She enjoys cuddling and chasing toys.</li>
+                        </ul>
+                        <button style="background-color: #ff5100; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; transition: background-color 0.3s ease;">Adopt Me</button>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
 
@@ -66,7 +105,6 @@
         </ul>
     </footer>
 
-    <!-- Add your JavaScript files or scripts here -->
     <script src="script.js"></script>
 </body>
 </html>
