@@ -22,7 +22,7 @@ This project is deployed using [XAMPP](https://www.apachefriends.org/index.html)
 
 ## Usage
 
-- **Account Creation**: Navigate to the "Sign Up" page to create a new account.
+- **Sign Up**: Navigate to the "Sign Up" page to create a new account.
 - **Log In**: Use your credentials to log in and access personalized features.
 - **Adoptable Pets**: Explore the "Pets" section to see all pets available for adoption.
 - **Contact**: Use the form on the "Contact" page to send any questions or inquiries.
