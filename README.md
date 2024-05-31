@@ -24,8 +24,8 @@ This project is deployed using [XAMPP](https://www.apachefriends.org/index.html)
 
 - **Account Creation**: Navigate to the "Sign Up" page to create a new account.
 - **Log In**: Use your credentials to log in and access personalized features.
-- **Browse Pets**: Explore the "Pets" section to see all pets available for adoption.
-- **Contact Us**: Use the form on the "Contact" page to send any questions or inquiries.
+- **Adoptable Pets**: Explore the "Pets" section to see all pets available for adoption.
+- **Contact**: Use the form on the "Contact" page to send any questions or inquiries.
 
 
 ![image](https://github.com/Morar-Cristina/WEB-Project/assets/100164128/a713521b-d783-461d-9c57-07a18579ba87)
